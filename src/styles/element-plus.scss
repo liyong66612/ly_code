@@ -1,0 +1,71 @@
+/** 自定义 Element Plus 样式 */
+
+// 表格
+.el-table {
+  // 表头
+  th.el-table__cell {
+    background-color: var(--el-fill-color-light) !important;
+  }
+  // 行元素
+  tr {
+    background-color: transparent;
+  }
+}
+
+// 分页
+.el-pagination {
+  // 参考 Bootstrap 的响应式设计 WIDTH = 768
+  @media screen and (max-width: 768px) {
+    .el-pagination__total,
+    .el-pagination__sizes,
+    .el-pagination__jump,
+    .btn-prev,
+    .btn-next {
+      display: none !important;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  //日期选择器
+  .el-date-editor .el-range-input {
+    font-size: 0.6rem;
+  }
+  .el-date-range-picker .el-picker-panel__body {
+    min-width: 100%;
+  }
+  .el-popper {
+    width: 80%;
+  }
+  .el-date-range-picker__content {
+    width: 100% !important;
+  }
+  .el-date-range-picker {
+    width: 100% !important;
+  }
+  .el-date-range-picker__content {
+    margin: 0px;
+    padding: 5px;
+  }
+  .el-date-range-picker__content.is-left {
+    padding-bottom: 0px;
+  }
+  .el-date-range-picker__content.is-right {
+    padding-top: 0px;
+  }
+  .el-date-table th {
+    padding: 0px;
+  }
+  .el-date-table td {
+    padding: 0px;
+  }
+  .el-date-editor {
+    width: 100% !important;
+  }
+  //单选按钮
+  .el-radio {
+    .el-radio__label {
+      font-size: 0.6rem !important;
+    }
+  }
+}

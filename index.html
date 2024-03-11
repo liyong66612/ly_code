@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/app-loading.css" />
+    <title>%VITE_APP_TITLE%</title>
+    <style>
+      /* todo 待解决inter.css需要后加载问题 */
+      @import url('https://rsms.me/inter/inter.css');
+      :root {
+      	--tblr-font-sans-serif: 'Inter Var', -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+      }
+      body {
+      	font-feature-settings: "cv03", "cv04", "cv11" !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div id="app-loading"></div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
